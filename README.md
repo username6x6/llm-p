@@ -15,7 +15,9 @@
 3. Установите зависимости и запустите приложение, следуя следующим инструкциям:
 
 uv sync
-uv run uvicorn app.main:app --reload --host 0.0.0.0 --port 8000Откройте http://localhost:8000/docs для доступа к Swagger-документации.
+uv run uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
+
+Откройте http://localhost:8000/docs для доступа к Swagger-документации.
 
 4. Использование:
 Зарегистрируйтесь через POST /auth/register.
