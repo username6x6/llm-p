@@ -1,0 +1,11 @@
+from pydantic import BaseModel, ConfigDict
+
+
+class UserPublic(BaseModel):
+    """Публичная схема пользователя (без пароля)."""
+
+    id: int
+    email: str
+    role: str
+
+    model_config = ConfigDict(from_attributes=True)
